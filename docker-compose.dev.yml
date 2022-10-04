@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web-dev:
+    container_name: web-dev
+    image: web-dev
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./:/src
+    ports:
+      - "3000:3000"

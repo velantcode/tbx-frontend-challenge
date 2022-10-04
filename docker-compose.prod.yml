@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web-prod:
+    container_name: web-prod
+    image: web-prod
+    build:
+      context: .
+      target: production
+    volumes:
+      - .:/src
+    ports:
+      - "80:80"

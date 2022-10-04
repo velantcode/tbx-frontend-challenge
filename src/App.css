@@ -1,0 +1,12 @@
+.table-max-height {
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.table-max-height-modal {
+  overflow: auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
